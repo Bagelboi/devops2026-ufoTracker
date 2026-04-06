@@ -1,0 +1,14 @@
+name: Teste Workflow
+
+on: pull_request
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Mensagem
+        run: echo "Rodando testes - Daniel Lipkin"
